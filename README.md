@@ -28,6 +28,3 @@ A aplicação foi construída visando uma arquitetura robusta, superando as 700 
 * **JavaScript:** Manipulação de DOM, Fetch API (Async/Await), Event Listeners e Gerenciamento de Estado de UI.
 * **Bootstrap :** Utilizado seletivamente para sistema de grid e componentes base (Modais, Offcanvas), com forte sobrescrita de CSS customizado.
 * **Pixabay API:** Fornecimento de assets visuais dinâmicos.
-
----
-*Projeto desenvolvido sob supervisão técnica com foco na capacitação de talentos em Desenvolvimento Front-End e UI/UX Design.*

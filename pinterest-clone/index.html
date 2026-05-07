@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pinterest - Clone</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg pin-navbar fixed-top px-3">
+  <a class="navbar-brand d-flex align-items-center" href="#">
+    <i class="fab fa-pinterest text-danger" style="font-size: 32px;"></i>
+  </a>
+  <ul class="navbar-nav d-none d-lg-flex flex-row gap-2 me-3">
+    <li class="nav-item"><a class="nav-link active fw-bold text-dark" href="#">Inicio</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="#" data-bs-toggle="modal" data-bs-target="#crearModal">Crear</a></li>
+  </ul>
+
+  <div class="search-bar flex-grow-1 mx-2">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Buscar" />
+    <i class="fas fa-camera camera-icon"></i>
+  </div>
+
+  <ul class="navbar-nav flex-row align-items-center gap-3 ms-2">
+    <li class="nav-item d-none d-md-block"><a href="#" class="text-dark fs-5" title="Notificaciones"><i class="fas fa-bell"></i></a></li>
+    <li class="nav-item d-none d-md-block"><a href="#" class="text-dark fs-5" title="Mensajes"><i class="fas fa-comment-dots"></i></a></li>
+    <li class="nav-item">
+      <img src="https://i.pravatar.cc/40?img=47" class="rounded-circle border" alt="perfil" width="36" height="36" />
+    </li>
+    <li class="nav-item"><i class="fas fa-chevron-down small text-muted"></i></li>
+  </ul>
+</nav>
+
+<!-- SIDEBAR -->
+<aside class="pin-sidebar d-none d-lg-flex flex-column align-items-center py-3">
+  <a href="#" class="sidebar-icon active" title="Inicio"><i class="fas fa-home"></i></a>
+  <a href="#" class="sidebar-icon" title="Tus ideas"><i class="fas fa-th-large"></i></a>
+  <a href="#" class="sidebar-icon" data-bs-toggle="modal" data-bs-target="#crearModal" title="Crear"><i class="fas fa-plus"></i></a>
+  <a href="#" class="sidebar-icon" title="Notificaciones"><i class="far fa-bell"></i></a>
+  <a href="#" class="sidebar-icon" title="Mensajes"><i class="far fa-comment-dots"></i></a>
+  <a href="#" class="sidebar-icon mt-auto" title="Configuración"><i class="fas fa-cog"></i></a>
+</aside>
+
+<!-- MAIN -->
+<main class="pin-main">
+  <div class="tabs-row d-flex justify-content-center gap-4 py-3">
+    <button class="tab-btn active">Todos</button>
+    <button class="tab-btn">Vida revisada</button>
+    <button class="tab-btn">Anime</button>
+    <button class="tab-btn">Moda</button>
+  </div>
+
+  <div id="masonry" class="masonry"></div>
+</main>
+
+<!-- MODAL CREAR -->
+<div class="modal fade" id="crearModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content rounded-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold">Crear</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="create-card text-center p-3">
+              <i class="fas fa-thumbtack fs-3 mb-2"></i>
+              <h6 class="fw-bold">Pin</h6>
+              <small class="text-muted">Publica tus fotos o videos.</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="create-card text-center p-3">
+              <i class="fas fa-th-large fs-3 mb-2"></i>
+              <h6 class="fw-bold">Tablero</h6>
+              <small class="text-muted">Organiza tus Pines favoritos.</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="create-card text-center p-3">
+              <i class="fas fa-images fs-3 mb-2"></i>
+              <h6 class="fw-bold">Collage</h6>
+              <small class="text-muted">Combina ideas y crea algo nuevo.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

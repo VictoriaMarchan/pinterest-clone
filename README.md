@@ -15,11 +15,11 @@ A aplicação foi construída visando uma arquitetura robusta e adotando boas pr
 
 ##  Funcionalidades Implementadas
 
-* [x] **Feed Dinâmico:** Scroll contínuo e carregamento de imagens via API.
-* [x] **Salvar Pins:** Lógica de estado que transfere imagens do feed principal para o grid pessoal do usuário.
-* [x] **Gerenciamento de Entidades:** Edição e exclusão de Pins com validação de ações destrutivas (Modais de alerta).
-* [x] **Criação Interativa:** Upload de arquivos locais (mock) e Canvas de edição interativa para Colagens com manipulação de camadas (duplicar, deletar).
-* [x] **Navegação SPA Híbrida:** Troca de *Views* sem recarregamento de página dentro das áreas de perfil e feed detalhado (Pin Detail View).
+**Feed Dinâmico:** Scroll contínuo e carregamento de imagens via API.
+**Salvar Pins:** Lógica de estado que transfere imagens do feed principal para o grid pessoal do usuário.
+**Gerenciamento de Entidades:** Edição e exclusão de Pins com validação de ações destrutivas (Modais de alerta).
+**Criação Interativa:** Upload de arquivos locais (mock) e Canvas de edição interativa para Colagens com manipulação de camadas (duplicar, deletar).
+**Navegação SPA Híbrida:** Troca de *Views* sem recarregamento de página dentro das áreas de perfil e feed detalhado (Pin Detail View).
 
 ##  Tecnologias Utilizadas
 

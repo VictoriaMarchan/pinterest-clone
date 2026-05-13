@@ -4,7 +4,7 @@ utilizando **JavaScript** e estruturação avançada de CSS.
 
 ##  Destaques do Projeto
 
-A aplicação foi construída visando uma arquitetura robusta, superando as 700 linhas de estruturação no HTML e adotando boas práticas de componentização sem o uso de frameworks JavaScript pesados.
+A aplicação foi construída visando uma arquitetura robusta e adotando boas práticas de componentização sem o uso de frameworks JavaScript pesados.
 
 * **Masonry Layout Nativo:** O icônico grid irregular do Pinterest recriado de forma responsiva utilizando CSS Columns puro, garantindo o efeito visual correto sem quebra de imagens.
 * **Integração com API (Pixabay):** Consumo de API real (Fetch API) para popular o feed inicial e as galerias de inspiração com imagens dinâmicas e de alta qualidade.
